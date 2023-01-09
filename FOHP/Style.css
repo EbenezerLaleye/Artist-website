@@ -32,7 +32,7 @@ body {
 
 
 
-a {
+nav a {
     display: inline;
     margin-right: 20px;
     text-decoration: none;
@@ -105,4 +105,117 @@ header {
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+}
+
+#about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* margin: 0 20px; */
+}
+
+#question {
+    width: 15vw;
+    height: 15vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px
+}
+
+#question h3 {
+    font-size: 1.7rem;
+}
+
+#answer {
+    /* border: 2px solid black; */
+}
+
+#pastfohp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#gallerytitle {
+    text-align: center;
+    font-size: clamp(30px, 6vw, 100px);
+}
+
+.year h2 {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.FOHPgallery {
+    width: 85vw;
+    height: 60vmin;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+
+.FOHPgallery img {
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.FOHPgallery img:hover {
+    flex: 5;
+}
+
+
+#countdown {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#countdown h2 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(50px, 8vw, 130px);
+    opacity: 85%;
+
+}
+
+#countdown h3 {
+
+    font-size: clamp(30px, 6vw, 100px);
+
+}
+
+#countdown button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#countdown a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+}
+
+#countdown a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+
 }
