@@ -2,6 +2,9 @@ const days = document.querySelector("#days")
 const hours = document.querySelector("#hours")
 const mins = document.querySelector("#mins")
 const secs = document.querySelector("#secs")
+const hamburger = document.querySelector("#hamburger")
+const mobileMenu = document.querySelector("#mobile-menu")
+
 
 const endDate = new Date("October 21, 2023 00:00:00").getTime();
 console.log(endDate)
@@ -20,3 +23,15 @@ setInterval(() => {
     secs.innerHTML = `${sec}s`;
 
 }, 1000)
+
+hamburger.addEventListener('click', () => {
+    if (hamburger.innerHTML === "menu") {
+        mobileMenu.classList.toggle("is-open")
+        hamburger.innerHTML = "close"
+    } else {
+        mobileMenu.classList.toggle("is-open")
+        hamburger.innerHTML = "menu"
+    }
+
+
+})
