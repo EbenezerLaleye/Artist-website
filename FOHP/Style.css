@@ -8,16 +8,20 @@ body {
     grid-template-areas:
         'nav nav nav'
         'header header header'
-        'main main main';
+        'main main main'
+        'contact contact contact';
+
+
     /* position: relative; */
 
 }
 
-
-button {
+button,
+input,
+textarea {
     appearance: none;
-    outline: none;
     border: none;
+    outline: none;
     background: none;
 }
 
@@ -25,18 +29,6 @@ button {
     width: 100%;
     grid-area: nav;
     box-sizing: border-box;
-    /* position: relative; */
-    /* z-index: 20; */
-    /* overflow: hidden; */
-    /* width: 100%; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* position: sticky; */
-    /* top: 0; */
-    /* flex-direction: row-reverse; */
-    /* background-color: black; */
-    /* opacity: 70%; */
-    /* border-bottom: 2px solid black; */
 
 }
 
@@ -163,7 +155,7 @@ header {
 .text-outer {
     color: black;
     font-weight: bold;
-    font-size: clamp(50px, 8vw, 130px);
+    font-size: clamp(30px, 8vw, 130px);
     white-space: nowrap;
     z-index: 0;
     position: absolute;
@@ -176,7 +168,7 @@ header {
 .text-inner {
     color: white;
     font-weight: bold;
-    font-size: clamp(50px, 8vw, 130px);
+    font-size: clamp(30px, 8vw, 130px);
     white-space: nowrap;
     position: absolute;
     z-index: 0;
@@ -189,6 +181,8 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
+    padding: 1rem;
+    place-items: center;
     /* margin: 0 20px; */
 }
 
@@ -200,16 +194,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px
+    /* margin-left: 20px; */
+
+    box-sizing: border-box;
 }
 
 #question h3 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
-#answer {
-    /* border: 2px solid black; */
-}
 
 #pastfohp {
     width: 100%;
@@ -306,6 +300,97 @@ header {
 
 }
 
+#contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f6f9fc;
+    background-color: #333333;
+    padding: 3rem;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 2rem;
+    /* background: rgba(0, 0, 0, 0.2); */
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem;
+    border-radius: 1.3rem;
+
+}
+
+.contact-info span {
+    margin-right: 10px;
+}
+
+.line {
+    border: 2px solid #f6f9fc;
+    min-height: 30vh;
+    margin-right: 2rem;
+    /* display: none; */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+#contact-form h3 {
+    font-size: 2.25rem;
+    padding: 2rem;
+    text-align: center;
+
+
+}
+
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#contact-details input {
+    display: block;
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    color: #f6f9fc;
+    font-size: 1.15rem;
+    border-radius: 1.3rem;
+
+}
+
+#contact-details textarea {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.8rem;
+    color: #f6f9fc;
+    flex: 1;
+    font-size: 1.25rem;
+}
+
+.submit {
+    cursor: pointer;
+}
+
 @media(min-width:800px) {
     .hamburger {
         display: none;
@@ -324,5 +409,17 @@ header {
     #imgcontainer {
         width: 100%;
         height: 78vh;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+    }
+
+    #question {
+        width: 100%;
+    }
+
+    #answer {
+        text-align: center;
     }
 }
