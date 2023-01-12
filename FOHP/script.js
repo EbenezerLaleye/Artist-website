@@ -4,6 +4,8 @@ const mins = document.querySelector("#mins")
 const secs = document.querySelector("#secs")
 const hamburger = document.querySelector("#hamburger")
 const mobileMenu = document.querySelector("#mobile-menu")
+const contactSec = document.querySelector('#contact');
+const contactLink = document.querySelector('#contactlink');
 
 
 const endDate = new Date("October 21, 2023 00:00:00").getTime();
@@ -35,3 +37,11 @@ hamburger.addEventListener('click', () => {
 
 
 })
+
+contactLink.addEventListener('click', (e) => {
+    e.preventDefault()
+    scrollToContact()
+})
+function scrollToContact() {
+    contactSec.scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
