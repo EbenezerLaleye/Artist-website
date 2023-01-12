@@ -426,6 +426,7 @@ header {
         height: 78vh;
     }
 
+
     #about {
         grid-template-columns: 1fr;
     }
@@ -440,5 +441,9 @@ header {
 
     #contact {
         flex-direction: column;
+    }
+
+    .line {
+        display: none;
     }
 }
