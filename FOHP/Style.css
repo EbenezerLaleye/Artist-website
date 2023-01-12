@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -29,19 +33,22 @@ textarea {
     width: 100%;
     grid-area: nav;
     box-sizing: border-box;
+    /* display: none; */
 
 }
 
 nav {
-    position: sticky;
-    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    /* box-sizing: border-box; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.9);
-    padding: 0 1rem;
+    padding: 0rem 1rem;
     /* opacity: 70%; */
-    z-index: 99;
+
     color: white;
 }
 
@@ -51,7 +58,7 @@ nav {
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 10px;
-
+    display: block;
 }
 
 .hamburger span {
@@ -183,6 +190,8 @@ header {
     grid-template-columns: 20% 80%;
     padding: 1rem;
     place-items: center;
+    box-sizing: border-box;
+    /* display: none; */
     /* margin: 0 20px; */
 }
 
@@ -342,6 +351,15 @@ header {
     /* display: none; */
 }
 
+.res {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+
+
+
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -367,9 +385,6 @@ header {
 
 #contact-details input {
     display: block;
-    flex: 1;
-    max-width: 800px;
-    width: 100%;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.5);
     padding: 1rem;
@@ -421,5 +436,9 @@ header {
 
     #answer {
         text-align: center;
+    }
+
+    #contact {
+        flex-direction: column;
     }
 }
