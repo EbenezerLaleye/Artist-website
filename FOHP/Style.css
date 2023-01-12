@@ -156,7 +156,7 @@ header {
 
 #imgcontainer:hover {
     width: 100%;
-    height: 78vh;
+    height: 80vh;
 
 }
 
@@ -224,7 +224,7 @@ header {
 }
 
 .year h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-left: 20px;
 }
 
@@ -234,6 +234,14 @@ header {
     display: flex;
     gap: 5px;
     padding: 10px;
+}
+
+
+.year:nth-of-type(2) {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .FOHPgallery img {
