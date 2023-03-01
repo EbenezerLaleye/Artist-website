@@ -446,4 +446,9 @@ header {
     .line {
         display: none;
     }
+
+    .FOHPgallery img {
+        flex: 1;
+    }
+
 }
